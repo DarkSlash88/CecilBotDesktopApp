@@ -2,7 +2,6 @@ import xlrd
 
 def dict_builder(path=""):
     location = path
-    # location = "DataFiles/Boss Moves v7.xls"
     book = xlrd.open_workbook(location)
     sheet = book.sheet_by_index(0)
     sheet.cell_value(0, 0)
