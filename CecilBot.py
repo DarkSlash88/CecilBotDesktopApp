@@ -1,12 +1,16 @@
+import twitchio
+
 from config import *
-import CommandHelper
+from CommandHelper import command_parse
 from DataBuilder import Data
 from twitchio.ext import commands
+import re
+
 """
 To-do:
 import data into dict from excel files ... DONE!
-analyze command syntax
-return and print command responses
+analyze command syntax...DONE
+return and print command responses - Check message length
 build UI
 
 """
@@ -38,23 +42,41 @@ async def event_message(ctx):
     if ctx.author.name.lower() == BOT_NICK.lower():
         return
 
+    # print(f'{ctx.channel} - {ctx.author.name}: {ctx.content}')
+    temp = (re.sub(r"[{|}]", "", str(command_parse(ctx.content))))
 
-    ### From here, handle messages that start with '!' ####
-    # Check to make sure if message is too long, return a list of messages and send messages in order
+    for i in split_string(temp, 400):
+        await ctx.channel.send(i)
+        print(i)
 
-    # Make try/catch here
-    await bot.handle_commands(ctx) # handle defined decorated bot commands
-    print(f'{ctx.channel} - {ctx.author.name}: {ctx.content}')
-
-
-@bot.command()
-async def hello(ctx):
-    await ctx.channel.send(f"Hi {ctx.author.name}!")
+    # Not needed
+    # await bot.handle_commands(ctx) # handle defined decorated bot commands
 
 
-@bot.command()
-async def killbot(ctx):
-    await exit()
+# @bot.command()
+# async def hello(ctx):
+#     await ctx.channel.send(f"Hi {ctx.author.name}!")
+#
+#
+# @bot.command()
+# async def killbot(ctx):
+#     await exit()
+
+def split_string(message, limit, sep=" "):
+    words = message.split()
+    if max(map(len, words)) > limit:
+        raise ValueError("limit is too small")
+    res, part, others = [], words[0], words[1:]
+    for word in others:
+        if len(sep)+len(word) > limit-len(part):
+            res.append(part)
+            part = word
+        else:
+            part += sep+word
+    if part:
+        res.append(part)
+    return res
+
 
 
 if __name__ == "__main__":
