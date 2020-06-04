@@ -3,14 +3,14 @@ import re
 import threading
 import asyncio
 from sys import exit, argv
+from PyQt5 import Qt, QtGui
+from PyQt5.QtWidgets import *
 
-from twitchio.ext import commands
-
+from IrcBot import *
 from CommandHelper import command_parse
 from DataBuilder import Data
 from config import *
-from PyQt5 import Qt, QtGui
-from PyQt5.QtWidgets import *
+
 
 """
 To-do:
@@ -18,8 +18,8 @@ import data into dict from excel files ... DONE!
 analyze command syntax...DONE
 return and print command responses - Check message length...Done
 encrypt oauth token...Done
-build UI
-pretty print data
+build UI...done
+pretty print data... in progress
 
 """
 
@@ -42,7 +42,6 @@ class Window(QWidget):
         self.listcount = 0
 
         # ui elements
-        # self.channelinput = QLineEdit()
         self.channelinput = QLineEdit()
         self.channellistbox = QListWidget()
         self.selectedchannel = ""
@@ -51,11 +50,10 @@ class Window(QWidget):
         self.setGeometry(self.left, self.top, self.width, self.height)
 
         # ***************** Bot data **********************************
-
-
-
-
-
+        QApplication.processEvents()
+        # startbot()
+        thread = threading.Thread(target=startbot, daemon=True)
+        thread.start()
 
         # build the UI
         self.createwindow()
@@ -81,7 +79,7 @@ class Window(QWidget):
         vbox.addWidget(self.channelinput)
 
         addchannelbutton = QPushButton("Add Channel")
-        addchannelbutton.clicked.connect(lambda: self.joinchannel())
+        addchannelbutton.clicked.connect(lambda: self.addchannel())
         vbox.addWidget(addchannelbutton)
 
         vbox.addStretch(1)
@@ -91,7 +89,7 @@ class Window(QWidget):
         vbox.addWidget(self.channellistbox)
 
         removechannelbutton = QPushButton("Remove Channel")
-        removechannelbutton.clicked.connect(lambda: self.partchannel())
+        removechannelbutton.clicked.connect(lambda: self.removechannel(self.selectedchannel))
         vbox.addWidget(removechannelbutton)
 
         self.setLayout(vbox)
@@ -102,12 +100,9 @@ class Window(QWidget):
         print(item)
         self.selectedchannel = str(item)
 
-    def joinchannel(self):
+    def addchannel(self):
         if (self.channelinput.text() is not None):
-            addchannel("greenknight5")
-            print(result)
-
-
+            joinchannel(self.channelinput.text())
 
             self.channellist.append(self.channelinput.text())
             self.channellistbox.insertItem(self.listcount, self.channelinput.text())
@@ -116,15 +111,15 @@ class Window(QWidget):
         else:
             print("Error from UI adding channel")
 
-    def partchannel(self):
+    def removechannel(self, channelname):
         try:
             if ((self.listcount != 0) and (self.channellistbox.currentItem() is not None)):
                 self.channellist.remove(self.selectedchannel)
-                print(self.channellist)
+                # print(self.channellist)
                 self.listcount = len(self.channellist)
-                print(self.listcount)
+                # print(self.listcount)
                 self.channellistbox.clear()
-                print("clear listbox")
+                # print("clear listbox")
                 count = 0
                 if (len(self.channellist) > 0):
                     for i in self.channellist:
@@ -133,89 +128,59 @@ class Window(QWidget):
                             count += count
                 else:
                     print("empty")
-        # leavechannel(channelname)
+                partchannel(channelname)
         except:
             print("Error from UI removing channel")
 
 
 # ****************************** Bot functionality *************************
 
-# global data
-data = Data()
-
-token = base64.b64decode(TMI_TOKEN)
-token = token.decode('ascii')
-
-bot = commands.Bot(
-    irc_token=token,
-    client_id=CLIENT_ID,
-    nick=BOT_NICK,
-    prefix=BOT_PREFIX,
-    initial_channels=CHANNEL
-)
-
-# commands.Bot.event_join()
+sock = socket.socket()
+sock.connect((SERVER, PORT))
 
 def startbot():
-    bot.run()
-
-@bot.event
-async def addchannel(channel):
     try:
-        templist = list()
-        print(f"test {channel}")
-        templist.append(str(channel).lower())
-        print(templist)
-        temp2 = ["cecil188"]
-        await bot.join_channels(temp2)
-        print("passed")
-        await bot.ws.send_privmsg(str(channel), "/me is initialized, awaiting commands.")
-        return True
-    except:
-        print("error")
-        return False
+        token = base64.b64decode(TMI_TOKEN)
+        token = token.decode('ascii')
+        sock.send(f"PASS {token}\n".encode('utf-8'))
+        sock.send(f"NICK {BOT_NICK}\n".encode('utf-8'))
 
-@bot.event
-async def leavechannel(channel):
-    try:
-        templist = list()
-        templist.append(channel)
-        await bot.ws.send_privmsg(str(channel).lower(), "/me is outta here!.")
-        await bot.part_channels(templist)
-        return True
-    except:
-        print("error")
-        return False
+        while True:
+            resp = sock.recv(2048).decode('utf-8')
 
+            if resp.startswith('PING'):
+                sock.send("PONG :tmi.twitch.tv\n".encode('utf-8'))
 
-@bot.event
-async def event_ready():
-    print(f"{BOT_NICK} is online!")
-    ws = bot.ws
-    # Called once when the bot goes online.
-    await ws.send_privmsg("greenknight5", "/me is initialized, awaiting commands.")
+            messageformat = ":(.*)\!.*@.*\.tmi\.twitch\.tv\sPRIVMSG\s#(.*)\s:(.*)\r"
+            m = re.search(messageformat, str(resp))
+            if m:
+                author, channel, message = m.groups()
+                # print(f"{channel}<-{author}: {message}")
 
-@bot.event
-async def event_message(ctx):
-    if ctx.author.name.lower() == BOT_NICK.lower():
-        return
-    # print(f'{ctx.channel} - {ctx.author.name}: {ctx.content}')
+                temp = command_parse(author, message)
+                s = str(temp)
+                if isinstance(temp, dict):
+                    s = ""
+                    for key, value in temp.items():
+                        s += f"<{key}: {value}>"
+                if s != "Null":
+                    for i in split_string(s, 500):
+                        sock.send((f"PRIVMSG  #{channel} :{i}\r\n").encode('utf-8'))
 
-    #testing
-    # if (ctx.content == "join channel"):
-    #     await addchannel("cecil188")
-    # if (ctx.content == "leave channel"):
-    #     await leavechannel("cecil188")
+            else:
+                print(resp)
+    except Exception:
+        print(traceback.print_exc())
 
-    # parse output to put in () in proper places
-    temp = (re.sub(r"['|{|}]", "", str(command_parse(ctx.author.name, ctx.content))))
+def joinchannel(channelname):
+    tempchannelname = channelname.lower()
+    sock.send(f"JOIN #{tempchannelname}\n".encode('utf-8'))
+    sock.send((f"PRIVMSG  #{tempchannelname} :test from CecilBot\r\n").encode('utf-8'))
 
-    # split message if longer than 500 characters
-    if (temp != "None"):
-        for i in split_string(temp, 500):
-            await ctx.channel.send(i)
-            print(i)
-
+def partchannel(channelname):
+    tempchannelname = channelname.lower()
+    sock.send((f"PRIVMSG  #{tempchannelname} :CecilBot leaving!\r\n").encode('utf-8'))
+    sock.send(f"PART #{tempchannelname}\r\n".encode('utf-8'))
 
 def split_string(message, limit, sep=" "):
     words = message.split()
@@ -236,8 +201,6 @@ def split_string(message, limit, sep=" "):
 
 if __name__ == "__main__":
     App = QApplication(argv)
-    # thread = threading.Thread(target=startbot, daemon=True)
-    # thread.start()
     window = Window()
     exit(App.exec())
 

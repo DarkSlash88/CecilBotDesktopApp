@@ -15,6 +15,7 @@ def command_parse(author, message):
     specialweaponpattern = r"\A!specialweapon\s.*"
     statuseffectpattern = r"\A!statuseffect\s\.*"
     rootpattern = r"\A!base\s.*"
+    communitycommandpattern = r"\A!.*"
 
     #General command patterns
     hellopattern = r"\A!hello"
@@ -95,6 +96,7 @@ def command_parse(author, message):
                   f"and try again. REMEBER: capitalization matters!")
 
 
+
     elif re.search(hellopattern, message, re.IGNORECASE):
         return f"Hello {author}!"
     elif re.search(commandspattern, message, re.IGNORECASE):
@@ -126,7 +128,13 @@ def command_parse(author, message):
                "spells within each skill-set. CecilBot was made by GreenKnight5 and inspired by " \
                "FF6Rando community member Cecil188, and uses databases authored by Cecil188. " \
                "Please PM any questions, comments, concerns to @GreenKnight5 or @Cecil188."
-
+    elif re.search(communitycommandpattern, message, re.IGNORECASE):
+        try:
+            return ("community command entered?")
+        except:
+            return ("major error in communitycommands")
+    else:
+        return "Null"
 
 
 """Commands to add
@@ -138,6 +146,7 @@ def command_parse(author, message):
 !about - CecilBot is a program to help players by providing a list of skills and spells within each skill-set. CecilBot was made by GreenKnight5 and inspired by FF6Rando community member Cecil188, and uses databases authored by Cecil188. Please PM any questions, comments, concerns to @GreenKnight5 or @Cecil188.
 """
 
+# for testing
 if __name__ == "__main__":
     print(command_parse("greenKnight5", "!?-fire"))
 
