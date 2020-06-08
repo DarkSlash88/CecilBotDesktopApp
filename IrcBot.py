@@ -8,6 +8,11 @@ import traceback
 from CommandHelper import *
 from time import sleep
 
+"""
+    General bot functionality. Not used for GUI operation
+"""
+
+
 
 sock = socket.socket()
 sock.connect((SERVER, PORT))
@@ -36,7 +41,10 @@ def startbot():
                 if isinstance(temp, dict):
                     s = ""
                     for key, value in temp.items():
-                        s += f"<{key}: {value}>"
+                        if len(temp.items()) == 1:
+                            s += f"{value}"
+                        else:
+                            s += f"<{key}: {value}>"
                 if s != "Null":
                     for i in split_string(s, 500):
                         sock.send((f"PRIVMSG  #{channel} :{i}\r\n").encode('utf-8'))
@@ -78,7 +86,5 @@ if __name__ == "__main__":
     thread.start()
     sleep(1)
     joinchannel("greenknight5")
-    # sleep(1)
-    # partchannel("greenknight5")
 
 

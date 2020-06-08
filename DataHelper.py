@@ -1,6 +1,9 @@
 import xlrd
 import re
 
+# Open specified excel file and read data from file.
+# Warning: when files are updated and their names get changed, you
+#   must update the hard coded file name in DataBuilder.py
 def dict_builder(path=""):
     location = path
     book = xlrd.open_workbook(location)

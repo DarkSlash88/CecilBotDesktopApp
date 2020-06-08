@@ -2,29 +2,14 @@ import base64
 import re
 import threading
 import asyncio
+import socket
 from sys import exit, argv
 from PyQt5 import Qt, QtGui
 from PyQt5.QtWidgets import *
 
-from IrcBot import *
 from CommandHelper import command_parse
 from DataBuilder import Data
 from config import *
-
-
-"""
-To-do:
-import data into dict from excel files ... DONE!
-analyze command syntax...DONE
-return and print command responses - Check message length...Done
-encrypt oauth token...Done
-build UI...done
-pretty print data... in progress
-
-"""
-
-# ******************************** Bot UI **********************************
-
 
 
 class Window(QWidget):
@@ -38,20 +23,18 @@ class Window(QWidget):
         self.width = 350
         self.height = 450
 
-        self.channellist = []
-        self.listcount = 0
+        self.setWindowTitle(self.title)
+        self.setGeometry(self.left, self.top, self.width, self.height)
 
         # ui elements
         self.channelinput = QLineEdit()
         self.channellistbox = QListWidget()
+        self.channellistbox.setFont(Qt.QFont('Arial', 25))
         self.selectedchannel = ""
+        self.channellist = []
+        self.listcount = 0
 
-        self.setWindowTitle(self.title)
-        self.setGeometry(self.left, self.top, self.width, self.height)
-
-        # ***************** Bot data **********************************
-        QApplication.processEvents()
-        # startbot()
+        # start new thread and run bot in the background
         thread = threading.Thread(target=startbot, daemon=True)
         thread.start()
 
@@ -60,6 +43,7 @@ class Window(QWidget):
         # show program onscreen
         self.show()
 
+    # layout and design of UI
     def createwindow(self):
         vbox = QVBoxLayout()
 
@@ -95,45 +79,49 @@ class Window(QWidget):
         self.setLayout(vbox)
         self.show()
 
+    # Event: when a channel name is clicked, the value of that line is stored into variable
     def listview_clicked(self):
         item = self.channellistbox.currentItem().text()
-        print(item)
         self.selectedchannel = str(item)
 
+    # Event: when clicking 'add channel' on UI
     def addchannel(self):
         if (self.channelinput.text() is not None):
             joinchannel(self.channelinput.text())
-
-            self.channellist.append(self.channelinput.text())
-            self.channellistbox.insertItem(self.listcount, self.channelinput.text())
-            self.listcount += 1
+            temp = self.channelinput.text().lower()
+            self.channellist.append(temp)
             self.channelinput.clear()
+            self.populatelistbox()
         else:
             print("Error from UI adding channel")
+            print(traceback.print_exc())
 
+    # Event: when clicking the 'remove' channel button
     def removechannel(self, channelname):
         try:
             if ((self.listcount != 0) and (self.channellistbox.currentItem() is not None)):
                 self.channellist.remove(self.selectedchannel)
-                # print(self.channellist)
-                self.listcount = len(self.channellist)
-                # print(self.listcount)
-                self.channellistbox.clear()
-                # print("clear listbox")
-                count = 0
-                if (len(self.channellist) > 0):
-                    for i in self.channellist:
-                        if count < self.listcount:
-                            self.channellistbox.insertItem(count, str(i))
-                            count += count
-                else:
-                    print("empty")
                 partchannel(channelname)
+                self.populatelistbox()
         except:
             print("Error from UI removing channel")
+            print(traceback.print_exc())
+
+    # Populate or re-populate listbox when channel is added or removed
+    def populatelistbox(self):
+        self.channellistbox.clear()
+        self.listcount = 0
+        if len(self.channellist) > 0:
+            for item in self.channellist:
+                self.channellistbox.insertItem(self.listcount, item)
+                self.listcount += 1
 
 
 # ****************************** Bot functionality *************************
+
+# Connect to twitch server using supplied data, and
+#   analyze chat messages for potential bot commands.
+# Run as thread until program is closed
 
 sock = socket.socket()
 sock.connect((SERVER, PORT))
@@ -155,14 +143,16 @@ def startbot():
             m = re.search(messageformat, str(resp))
             if m:
                 author, channel, message = m.groups()
-                # print(f"{channel}<-{author}: {message}")
 
                 temp = command_parse(author, message)
                 s = str(temp)
                 if isinstance(temp, dict):
                     s = ""
                     for key, value in temp.items():
-                        s += f"<{key}: {value}>"
+                        if len(temp.items()) == 1:
+                            s += f"{value}"
+                        else:
+                            s += f"<{key}: {value}>"
                 if s != "Null":
                     for i in split_string(s, 500):
                         sock.send((f"PRIVMSG  #{channel} :{i}\r\n").encode('utf-8'))
@@ -172,16 +162,19 @@ def startbot():
     except Exception:
         print(traceback.print_exc())
 
+# send message to twitch server to JOIN a specified channel
 def joinchannel(channelname):
     tempchannelname = channelname.lower()
     sock.send(f"JOIN #{tempchannelname}\n".encode('utf-8'))
-    sock.send((f"PRIVMSG  #{tempchannelname} :test from CecilBot\r\n").encode('utf-8'))
+    sock.send((f"PRIVMSG  #{tempchannelname} :/me is here\r\n").encode('utf-8'))
 
+# # send message to twitch server to PART (leave/disconnect) a specified channel
 def partchannel(channelname):
     tempchannelname = channelname.lower()
-    sock.send((f"PRIVMSG  #{tempchannelname} :CecilBot leaving!\r\n").encode('utf-8'))
+    sock.send((f"PRIVMSG  #{tempchannelname} :/me is outta here!\r\n").encode('utf-8'))
     sock.send(f"PART #{tempchannelname}\r\n".encode('utf-8'))
 
+# prepare a string and break it up cleanly if longer than specified number of character
 def split_string(message, limit, sep=" "):
     words = message.split()
     if max(map(len, words)) > limit:

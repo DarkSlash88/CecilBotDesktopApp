@@ -96,7 +96,6 @@ def command_parse(author, message):
                   f"and try again. REMEBER: capitalization matters!")
 
 
-
     elif re.search(hellopattern, message, re.IGNORECASE):
         return f"Hello {author}!"
     elif re.search(commandspattern, message, re.IGNORECASE):
@@ -130,21 +129,13 @@ def command_parse(author, message):
                "Please PM any questions, comments, concerns to @GreenKnight5 or @Cecil188."
     elif re.search(communitycommandpattern, message, re.IGNORECASE):
         try:
-            return ("community command entered?")
+            temp = re.sub("!", "", message)
+            return (data.commands[temp])
         except:
             return ("major error in communitycommands")
     else:
         return "Null"
 
-
-"""Commands to add
-!commands
-!beyondchaos - 
-!getbc - Current EX version by SubtractionSoup: https://github.com/subtractionsoup/beyondchaos/releases/latest
-!discord - Check out the Beyond Chaos Barracks - https://discord.gg/S3G3UXy
-!permadeath - Permadeath means starting a new randomized game upon game over
-!about - CecilBot is a program to help players by providing a list of skills and spells within each skill-set. CecilBot was made by GreenKnight5 and inspired by FF6Rando community member Cecil188, and uses databases authored by Cecil188. Please PM any questions, comments, concerns to @GreenKnight5 or @Cecil188.
-"""
 
 # for testing
 if __name__ == "__main__":

@@ -40,12 +40,12 @@ SKILL_PARAMETERS_TABLE = path.join(tblpath, "Skill Parameters v3.xls")
 SPECIAL_EQUIPMENT_TABLE = path.join(tblpath, "Special Equipment v3.xls")
 SPECIAL_WEAPONS_TABLE = path.join(tblpath, "Special Weapons v4.xls")
 STATUS_EFFECTS_TABLE = path.join(tblpath, "Status Effects v3.xls")
+COMMANDS_TABLE = path.join(tblpath, "Commands v1.xls")
 
 
 
 class Data:
     def __init__(self):
-        # self.boss_moves = dict_builder("DataFiles/Boss Moves v7.xls")
         self.boss_moves = dict_builder(BOSS_MOVES_TABLE)
         self.codes = dict_builder(CODES_TABLE)
         self.item_table = dict_builder(ITEM_TABLE)
@@ -55,6 +55,7 @@ class Data:
         self.special_equipment = dict_builder(SPECIAL_EQUIPMENT_TABLE)
         self.special_weapons = dict_builder(SPECIAL_WEAPONS_TABLE)
         self.status_effects = dict_builder(STATUS_EFFECTS_TABLE)
+        self.commands = dict_builder(COMMANDS_TABLE)
 
 # For testing
 if __name__ == "__main__":
