@@ -132,7 +132,8 @@ def command_parse(author, message):
             temp = re.sub("!", "", message)
             return (data.commands[temp])
         except:
-            return ("major error in communitycommands")
+            return "Null"
+            # return ("major error in communitycommands")
     else:
         return "Null"
 
