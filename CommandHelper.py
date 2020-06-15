@@ -31,8 +31,12 @@ def command_parse(author, message):
             temp = re.sub("!", "", message).lower()
             return (data.random_skillsets[temp])
         except:
-            return (f"Sorry, could not find {temp}. Please check your spelling "
-                  f"and try again.")
+            try:
+                temp = re.sub("!", "", message).lower()
+                return (data.commands[temp])
+            except:
+                return "Null"
+            
     elif re.search(wcommandpattern, message, re.IGNORECASE):
         return "W-/?-/3x-[spellset] is just like r-[spellset] but gets casted more than once. " \
                "NOTE: W-/?-/3x/etc. spellsets with Spiraler, Quadra Slam, " \
@@ -40,14 +44,14 @@ def command_parse(author, message):
 
     elif re.search(skillpattern, message, re.IGNORECASE):
         try:
-            temp = re.sub("!skill ", "", message)
+            temp = re.sub("!skill ", "", message).lower()
             return (data.skill_parameters[temp])
         except:
             return (f"Sorry, could not find {temp}. Please check your spelling "
                   f"and try again.")
     elif re.search(bosspattern, message, re.IGNORECASE):
         try:
-            temp = re.sub("!boss ", "", message)
+            temp = re.sub("!boss ", "", message).lower()
             return (data.boss_moves[temp])
         except:
             return (f"Sorry, could not find {temp}. Please check your spelling "
@@ -55,35 +59,35 @@ def command_parse(author, message):
     elif re.search(codepattern, message, re.IGNORECASE):
         # make command to see all
         try:
-            temp = re.sub("!code ", "", message)
+            temp = re.sub("!code ", "", message).lower()
             return (data.codes[temp])
         except:
             return (f"Sorry, could not find {temp}. Please check your spelling "
                   f"and try again.")
     elif re.search(itempattern, message, re.IGNORECASE):
         try:
-            temp = re.sub("!item ", "", message)
+            temp = re.sub("!item ", "", message).lower()
             return (data.item_table[temp])
         except:
             return (f"Sorry, could not find {temp}. Please check your spelling "
                   f"and try again.")
     elif re.search(specialequipmentpattern, message, re.IGNORECASE):
         try:
-            temp = re.sub("!specialequipment ", "", message)
+            temp = re.sub("!specialequipment ", "", message).lower()
             return (data.special_equipment[temp])
         except:
             return (f"Sorry, could not find {temp}. Please check your spelling "
                   f"and try again.")
     elif re.search(specialweaponpattern, message, re.IGNORECASE):
         try:
-            temp = re.sub("!specialweapon ", "", message)
+            temp = re.sub("!specialweapon ", "", message).lower()
             return (data.special_weapons[temp])
         except:
             return (f"Sorry, could not find {temp}. Please check your spelling "
                   f"and try again.")
     elif re.search(statuseffectpattern, message, re.IGNORECASE):
         try:
-            temp = re.sub("!statuseffect ", "", message)
+            temp = re.sub("!statuseffect ", "", message).lower()
             return (data.status_effects[temp])
         except:
             pass
@@ -129,7 +133,7 @@ def command_parse(author, message):
                "Please PM any questions, comments, concerns to @GreenKnight5 or @Cecil188."
     elif re.search(communitycommandpattern, message, re.IGNORECASE):
         try:
-            temp = re.sub("!", "", message)
+            temp = re.sub("!", "", message).lower()
             return (data.commands[temp])
         except:
             return "Null"
