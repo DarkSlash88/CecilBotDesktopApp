@@ -148,11 +148,17 @@ def startbot():
                 s = str(temp)
                 if isinstance(temp, dict):
                     s = ""
+                    count = 0
                     for key, value in temp.items():
-                        if len(temp.items()) == 1:
-                            s += f"{value}"
+                        tempvalue = re.sub(r"\.0", "", str(value))
+                        if len(temp.items()) == 2:
+                            if count == 1:
+                                s += f"{tempvalue}"
+                            # s += "({0})".format(value)
                         else:
-                            s += f"<{key}: {value}>"
+                            # s += f"<{key}: {value}>"
+                            s += "({0}: {1})".format(key, tempvalue)
+                        count += 1
                 if s != "Null":
                     for i in split_string(s, 500):
                         sock.send((f"PRIVMSG  #{channel} :{i}\r\n").encode('utf-8'))
