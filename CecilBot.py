@@ -77,7 +77,7 @@ class Window(QWidget):
         vbox.addWidget(removechannelbutton)
 
         self.setLayout(vbox)
-        self.show()
+        # self.show()
 
     # Event: when a channel name is clicked, the value of that line is stored into variable
     def listview_clicked(self):
@@ -150,13 +150,13 @@ def startbot():
                     s = ""
                     count = 0
                     for key, value in temp.items():
+                        # Get rid of any trailing decimal values
                         tempvalue = re.sub(r"\.0", "", str(value))
                         if len(temp.items()) == 2:
+                            # Only print responses for simple commands
                             if count == 1:
                                 s += f"{tempvalue}"
-                            # s += "({0})".format(value)
                         else:
-                            # s += f"<{key}: {value}>"
                             s += "({0}: {1})".format(key, tempvalue)
                         count += 1
                 if s != "Null":
@@ -164,6 +164,7 @@ def startbot():
                         sock.send((f"PRIVMSG  #{channel} :{i}\r\n").encode('utf-8'))
 
             else:
+                # Show response in terminal window (if displayed on screen)
                 print(resp)
     except Exception:
         print(traceback.print_exc())

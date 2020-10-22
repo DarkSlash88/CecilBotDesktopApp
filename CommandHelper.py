@@ -5,8 +5,9 @@ data = Data()
 
 def command_parse(author, message):
     #Data lookup patterns
+    rchaospattern = r"\A!r-?chaos"
     rcommandpattern = r"\A!r-?\w*"
-    wcommandpattern = r"\A![w|?|3x]-?\w*"
+    wcommandpattern = r"\A![w|?|3x]-\w*"
     skillpattern = r"\A!skill\s.*"
     bosspattern = r"\A!boss\s.*"
     codepattern = r"\A!code[s]?\s\w*"
@@ -26,21 +27,27 @@ def command_parse(author, message):
     permadeath = r"\A!permadeath"
     aboutpattern = r"\A!about"
 
-    if re.search(rcommandpattern, message, re.IGNORECASE):
+
+    if re.search(rchaospattern, message, re.IGNORECASE):
+        return "It's literally every spell/skill in the game in one spellset. Threat:(8/255)"
+
+    elif re.search(rcommandpattern, message, re.IGNORECASE):
         try:
             temp = re.sub("!", "", message).lower()
             return (data.random_skillsets[temp])
         except:
+            #in case someone enteres a community command that starts with "r"
             try:
                 temp = re.sub("!", "", message).lower()
                 return (data.commands[temp])
             except:
                 return "Null"
-            
+
     elif re.search(wcommandpattern, message, re.IGNORECASE):
-        return "W-/?-/3x-[spellset] is just like r-[spellset] but gets casted more than once. " \
-               "NOTE: W-/?-/3x/etc. spellsets with Spiraler, Quadra Slam, " \
-               "and/or Quadra Slice will not cast those spells!"
+        return "W-/?-/3x-[spellset] is just like r-[spellset] but " \
+               "gets cast more than once. NOTE: These spellsets that " \
+               "include Spiraler, Quadra Slam, and/or Quadra Slice will " \
+               "not cast those spells!"
 
     elif re.search(skillpattern, message, re.IGNORECASE):
         try:
@@ -57,7 +64,6 @@ def command_parse(author, message):
             return (f"Sorry, could not find {temp}. Please check your spelling "
                   f"and try again.")
     elif re.search(codepattern, message, re.IGNORECASE):
-        # make command to see all
         try:
             temp = re.sub("!code ", "", message).lower()
             return (data.codes[temp])
@@ -137,12 +143,11 @@ def command_parse(author, message):
             return (data.commands[temp])
         except:
             return "Null"
-            # return ("major error in communitycommands")
     else:
         return "Null"
 
 
 # for testing
 if __name__ == "__main__":
-    print(command_parse("greenKnight5", "!?-fire"))
+    print(command_parse("greenKnight5", "!r-chaos"))
 

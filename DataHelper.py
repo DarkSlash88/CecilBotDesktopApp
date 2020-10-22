@@ -13,7 +13,6 @@ def dict_builder(path=""):
 
     for rownum in range(1, sheet.nrows):
         tempdict = dict()
-        # for cn, values in zip(sheet.row_values(0, 1), sheet.row_values(rownum, 1)):
         for cn, values in zip(sheet.row_values(0, 0), sheet.row_values(rownum, 0)):
             if (values != ""):
                 tempdict[cn] = values
