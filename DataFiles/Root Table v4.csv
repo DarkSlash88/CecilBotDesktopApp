@@ -1,0 +1,515 @@
+Root,Skills
+50,50 Gs
+7F,7-Flush
+Ab,Absolute 0
+Ac,Acid Rain
+Ae,Aero
+Ai,Air Blade
+Al,Alexandr
+An,"Antdot, Antlion"
+Aq,Aqua Rake
+At,Atomic Ray
+Au,Aura Bolt
+Ba,"BabaBreath, Back Blade, Bahamut, Battle"
+Bi,"Big Guard, Bio, Bio Blast, Bismark"
+Bl,"Blaster, Blaze, Blizzard, Blow Fish"
+Bo,"Bolt, Bolt 2, Bolt 3, Bolt Beam, Bolt Edge, Bomblet"
+Br,Break
+Bs,*Bserk*
+Bu,Bum Rush
+Ca,"Carbunkl, Cave In"
+Ch,"Charm, Chocobop, ChokeSmoke"
+Cl,"CleanSweep, Clear, Cleave"
+Co,"Cokatrice, Cold Dust, Condemned, Confuser, Confusion"
+Cr,*Crusader*
+Cu,"Cure, Cure 2, Cure 3"
+Cy,Cyclonic
+De,"Delta Hit, Demi"
+Di,"Diffuser, Disaster, Discard, Dischord, Dispatch, Dispel"
+Do,Doom
+Dr,"Drain, Dread"
+El,"Elf Fire, El Nino"
+Em,Empowerer
+En,"Engulf, Entwine"
+Es,Escape
+Ex,Exploder
+Ev,Evil Toot
+Fa,Fallen One
+Fe,Fenrir
+Fi,"Fire, Fire 2, Fire 3, Fire Ball, Fire Beam, Fire Dance, Fire Skean, Fire Wall"
+Fl,"Flare, Flare Star, Flash, Flash Rain, Float"
+Fo,ForceField
+Ga,GaleCut
+Gi,Giga Volt
+Go,"Golem, Goner"
+Gr,"GrandTrain, Grav Bomb"
+Ha,"Harvester, Haste, Haste2"
+HB,H-Bomb
+He,"Heal Force, Heart Burn"
+Hy,HyperDrive
+Ic,"Ice, Ice 2, Ice 3, Ice Beam, Ice Rabbit"
+If,Ifrit
+Im,"Imp, Imp Song"
+Ki,"Kirin, Kitty"
+L3,L.3 Muddle
+L4,L.4 Flare
+L5,L.5 Doom
+L?,L.? Pearl
+La,"Lagomorph, Land Slide, Launcher"
+Li,"Life, Life 2, Life 3, Lifeshaver"
+Lo,"Lode Stone, Love Token"
+Lu,Lullaby
+Ma,"Maduin, Magnitude8, Mantra"
+Me,"Megahit, Megazerk, Mega Volt, *Merton*, Meteo, Meteor"
+Mi,"Mind Blast, Mirager, Missile"
+Mo,MoogleRush
+Mu,"Muddle, Mute, Mute"
+NC,N. Cross
+Ne,Net
+Od,Odin
+Os,Osmose
+Ov,Overcast
+Pa,Palidor
+Pe,"Pearl, Pearl Wind, *Pep Up*"
+Ph,"Phantasm, Phantom, Phoenix"
+Pl,Plasma
+Po,"Pois. Frog, Poison"
+Pu,Pummel
+Qu,"Quadra Slam, Quadra Slice, *Quake*, Quartr, Quasar, Quick"
+RP,R.Polarity
+Ra,"Rage, Ragnarok, Raid, Raiden, Ramuh, Rasp"
+Re,"Red Card, Regen, Reflect???, Remedy, Retort, Revenge, Revenger"
+Ri,"Riot Blade, Rippler"
+Rf,Rflect
+Ro,"Roulette, RoyalShock"
+SC,S. Cross
+Sa,"SabreSoul, Safe, Sand Storm"
+Sc,"Scan, Scar Beam, Schiller"
+Se,Seize
+Sh,"ShadowFang, Shell, Shimsham, Shiva, Shoat, Shock Wave, Shrapnel"
+Si,Siren
+Sl,"Slash, Sleep, Slide, Slimer, Slow, Slow 2"
+Sn,"Snare, Snowball, Sneeze"
+So,"Sonic Boom, Soul Out, Sour Mouth"
+Sp,"Special, Specter, Spin Edge, *Spiraler*"
+Sr,Sraphim
+St,"Starlet, Star Prism, Step Mine, Stone, Stop, Stray, Stunner"
+Su,"Sun Bath, Super Ball, Suplex, Surge"
+Ta,"Takedown, Tapir, Targetting"
+Te,"TekBarrier, TekMissile, Tek Laser, Tentacle, Terrato"
+Ti,TigerBreak
+Tr,"Train, Tritoch"
+Un,Unicorn
+Ul,Ultima
+Va,Vanish
+Vi,Virite
+WW,*W Wind*
+Wa,"WallChange, *Warp*, Water Edge, WaveCannon"
+Wh,Whump
+Wi,"Wild Bear, Wild Fang, Wind Slash"
+Wo,Wombat
+XF,X-Fer
+XM,X-Meteo
+XZ,X-Zone
+Zi,Zinger
+Zo,ZoneSeek
+50G,50 Gs
+7Fl,7-Flush
+Abs,Absolute 0
+Aci,Acid Rain
+Aer,Aero
+Air,Air Blade
+Ale,Alexandr
+Ant,"Antdot, Antlion"
+Aqu,Aqua Rake
+Ato,Atomic Ray
+Aur,AuraBolt
+Bab,BabaBreath
+Bac,Back Blade
+Bah,Bahamut
+Bat,Battle
+Big,Big Guard
+Bio,"Bio, Bio Blast"
+Bis,Bismark
+Bla,"Blaster, Blaze"
+Bli,Blizzard
+Blo,Blow Fish
+Bol,"Bolt, Bolt 2, Bolt 3, Bolt Beam, Bolt Edge"
+Bom,Bomblet
+Bre,Break
+Bse,*Bserk*
+Bum,Bum Rush
+Car,Carbunkl
+Cav,Cave In
+Cha,Charm
+Cho,"Chocobop, ChokeSmoke"
+Cle,"CleanSweep, Clear, Cleave"
+Cok,Cokatrice
+Col,Cold Dust
+Con,"Condemned, Confuser, Confusion"
+Cru,*Crusader*
+Cur,"Cure, Cure 2, Cure 3"
+Cyc,Cyclonic
+Del,Delta Hit
+Dem,Demi
+Dif,Diffuser
+Dis,"Disaster, Discard, Dischord, Dispatch, Dispel"
+Doo,Doom
+Dra,Drain
+Dre,Dread
+Elf,Elf Fire
+ElN,El Nino
+Emp,Empowerer
+Eng,Engulf
+Ent,Entwine
+Esc,Escape
+Exp,Exploder
+Evi,Evil Toot
+Fal,Fallen One
+Fen,Fenrir
+Fir,"Fire, Fire 2, Fire 3, Fire Ball, Fire Beam, Fire Dance, Fire Skean, Fire Wall"
+Fla,"Flare, Flare Star, Flash, Flash Rain"
+Flo,Float
+For,ForceField
+Gal,Gale Cut
+Gig,Giga Volt
+Gol,Golem
+Gon,Goner
+Gra,"GrandTrain, Grav Bomb"
+Har,Harvester
+Has,"Haste, Haste2"
+HBo,H-Bomb
+Hea,"Heal Force, Heart Burn"
+Hyp,HyperDrive
+Ice,"Ice, Ice 2, Ice 3, Ice Beam, Ice Rabbit"
+Ifr,Ifrit
+Imp,"Imp, Imp Song"
+Kir,Kirin
+Kit,Kitty
+L3M,L.3 Muddle
+L4F,L.4 Flare
+L5D,L.5 Doom
+L?P,L.? Pearl
+Lag,Lagomorph
+Lan,Land Slide
+Lau,Launcher
+Lif,"Life, Life 2, Life 3, Lifeshaver"
+Lod,Lode Stone
+Lov,Love Token
+Lul,Lullaby
+Mad,Maduin
+Mag,Magnitude8
+Man,Mantra
+Meg,"Megahit, Megazerk, Mega Volt"
+Mer,*Merton*
+Met,"Meteo, Meteor"
+Min,Mind Blast
+Mir,Mirager
+Mis,Missile
+Moo,MoogleRush
+Mud,Muddle
+Mut,"Mute, Mute"
+NCr,N. Cross
+Net,Net
+Odi,Odin
+Osm,Osmose
+Ove,Overcast
+Pal,Palidor
+Pea,"Pearl, Pearl Wind"
+Pep,*Pep Up*
+Pha,"Phantasm, Phantom"
+Pho,Phoenix
+Pla,Plasma
+Poi,"Pois. Frog, Poison"
+Pum,Pummel
+Qua,"Quadra Slam, Quadra Slice, *Quake*, Quasar"
+Qui,Quick
+RPo,R.Polarity
+Rag,"Rage, Ragnarok"
+Rai,"Raid, Raiden"
+Ram,Ramuh
+Ras,Rasp
+Red,Red Card
+Reg,Regen
+Ref,Reflect???
+Rem,Remedy
+Ret,Retort
+Rev,"Revenge, Revenger"
+Rio,Riot Blade
+Rip,Rippler
+Rfl,Rflect
+Rou,Roulette
+Roy,RoyalShock
+SCr,S. Cross
+Sab,SabreSoul
+Saf,Safe
+San,Sand Storm
+Sca,"Scan, Scar Beam"
+Sch,Schiller
+Sei,Seize
+Sha,ShadowFang
+She,Shell
+Shi,"Shimsham, Shiva"
+Sho,"Shoat, Shock Wave"
+Shr,Shrapnel
+Sir,Siren
+Sla,Slash
+Sle,Sleep
+Sli,"Slide, Slimer"
+Slo,"Slow, Slow 2"
+Sna,Snare
+Sno,Snowball
+Sne,Sneeze
+Son,Sonic Boom
+Sou,"Soul Out, Sour Mouth"
+Spe,"Special, Specter"
+Spi,"Spin Edge, *Spiraler*"
+Sra,Sraphim
+Sta,"Starlet, Star Prism"
+Ste,Step Mine
+Sto,"Stone, Storm, Stop"
+Str,Stray
+Stu,Stunner
+Sun,Sun Bath
+Sup,"Super Ball, Suplex"
+Sur,Surge
+Tak,Takedown
+Tap,Tapir
+Tar,Targetting
+Tek,"TekBarrier, TekMissile, Tek Laser"
+Ten,Tentacle
+Ter,Terrato
+Tig,TigerBreak
+Tra,Train
+Tri,Tritoch
+Uni,Unicorn
+Ult,Ultima
+Van,Vanish
+Vir,Virite
+WWi,*W Wind*
+Wal,WallChange
+War,*Warp*
+Wat,Water Edge
+Wav,WaveCannon
+Whu,Whump
+Wil,"Wild Bear, Wild Fang"
+Win,Wind Slash
+Wom,Wombat
+XFe,X-Fer
+XMe,X-Meteo
+XZo,X-Zone
+Zin,Zinger
+Zon,ZoneSeek
+50Gs,50 Gs
+7Flu,7-Flush
+Abso,Absolute 0
+Acid,Acid Rain
+Aero,Aero
+AirB,Air Blade
+Alex,Alexandr
+Antd,Antdot
+Antl,Antlion
+Aqua,Aqua Rake
+Atom,Atomic Ray
+Aura,AuraBolt
+Baba,BabaBreath
+Back,Back Blade
+Baha,Bahamut
+Batt,Battle
+BigG,Big Guard
+BioB,Bio Blast
+Bism,Bismark
+Blas,Blaster
+Blaz,Blaze
+Bliz,Blizzard
+Blow,Blow Fish
+Bolt,"Bolt, Bolt 2, Bolt 3, Bolt Beam, Bolt Edge"
+Bomb,Bomblet
+Brea,Break
+Bser,*Bserk*
+BumR,Bum Rush
+Carb,Carbunkl
+Cave,Cave In
+Char,Charm
+Choc,Chocobop
+Chok,ChokeSmoke
+Clea,"CleanSweep, Clear, Cleave"
+Coka,Cokatrice
+Cold,Cold Dust
+Cond,Condemned
+Conf,"Confuser, Confusion"
+Crus,*Crusader*
+Cure,"Cure, Cure 2, Cure 3"
+Cycl,Cyclonic
+Delt,Delta Hit
+Demi,Demi
+Diff,Diffuser
+Disa,Disaster
+Disc,"Discard, Dischord"
+Disp,"Dispatch, Dispel"
+Doom,Doom
+Drai,Drain
+Drea,Dread
+ElfF,Elf Fire
+ElNi,El Nino
+Empo,Empowerer
+Engu,Engulf
+Entw,Entwine
+Esca,Escape
+Expl,Exploder
+Evil,Evil Toot
+Fall,Fallen One
+Fenr,Fenrir
+Fire,"Fire, Fire 2, Fire 3, Fire Ball, Fire Beam, Fire Dance, Fire Skean, Fire Wall"
+Flar,"Flare, Flare Star"
+Flas,"Flash, Flash Rain"
+Floa,Float
+Forc,ForceField
+Gale,Gale Cut
+Giga,Giga Volt
+Gole,Golem
+Gone,Goner
+Gran,GrandTrain
+Grav,Grav Bomb
+Harv,Harvester
+Hast,"Haste, Haste2"
+HBom,H-Bomb
+Heal,Heal Force
+Hear,Heart Burn
+Hype,HyperDrive
+Ice2,Ice 2
+Ice3,Ice 3
+IceB,Ice Beam
+IceR,Ice Rabbit
+Ifri,Ifrit
+ImpS,Imp Song
+Kiri,Kirin
+Kitt,Kitty
+L3Mu,L.3 Muddle
+L4Fl,L.4 Flare
+L5Do,L.5 Doom
+L?Pe,L.? Pearl
+Lago,Lagomorph
+Land,Land Slide
+Laun,Launcher
+Life,"Life, Life 2, Life 3, Lifeshaver"
+Lode,Lode Stone
+Love,Love Token
+Lull,Lullaby
+Madu,Maduin
+Magn,Magnitude8
+Mant,Mantra
+Mega,"Megahit, Megazerk, Mega Volt"
+Mert,*Merton*
+Mete,"Meteo, Meteor"
+Mind,Mind Blast
+Mira,Mirager
+Miss,Missile
+Moog,MoogleRush
+Mudd,Muddle
+Mute,"Mute, Mute"
+NCro,N. Cross
+Odin,Odin
+Osmo,Osmose
+Over,Overcast
+Pali,Palidor
+Pear,"Pearl, Pearl Wind"
+PepU,*Pep Up*
+Phan,"Phantasm, Phantom"
+Phoe,Phoenix
+Plas,Plasma
+Pois,"Pois. Frog, Poison"
+Pumm,Pummel
+Quad,"Quadra Slam, Quadra Slice"
+Quak,*Quake*
+Quar,Quartr
+Quas,Quasar
+Quic,Quick
+RPol,R.Polarity
+Rage,Rage
+Ragn,Ragnarok
+Raid,"Raid, Raiden"
+Ramu,Ramuh
+Rasp,Rasp
+RedC,Red Card
+Rege,Regen
+Refl,Reflect???
+Reme,Remedy
+Reto,Retort
+Reve,"Revenge, Revenger"
+Riot,Riot Blade
+Ripp,Rippler
+Rfle,Rflect
+Roul,Roulette
+Roya,RoyalShock
+SCro,S.Cross
+Sabr,SabreSoul
+Safe,Safe
+Sand,Sand Storm
+Scan,Scan
+Scar,Scar Beam
+Schi,Schiller
+Seiz,Seize
+Shad,ShadowFang
+Shel,Shell
+Shim,Shimsham
+Shiv,Shiva
+Shoa,Shoat
+Shoc,Shock Wave
+Shra,Shrapnel
+Sire,Siren
+Slas,Slash
+Slee,Sleep
+Slid,Slide
+Slim,Slimer
+Slow,"Slow, Slow 2"
+Snar,Snare
+Snow,Snowball
+Snee,Sneeze
+Soni,Sonic Boom
+Soul,Soul Out
+Sour,Sour Mouth
+Spec,"Special, Specter"
+Spin,Spin Edge
+Spir,*Spiraler*
+Srap,Sraphim
+Star,"Starlet, Star Prism"
+Step,Step Mine
+Ston,Stone
+Stor,Storm
+Stop,Stop
+Stra,Stray
+Stun,Stunner
+SunB,Sun Bath
+Supe,Super Ball
+Supl,Suplex
+Surg,Surge
+Take,Takedown
+Tapi,Tapir
+Targ,Targetting
+TekB,TekBarrier
+TekM,TekMissile
+TekL,TekLaser
+Tent,Tentacle
+Terr,Terrato
+Tige,TigerBreak
+Trai,Train
+Trit,Tritoch
+Unic,Unicorn
+Ulti,Ultima
+Vani,Vanish
+Viri,Virite
+WWin,*W Wind*
+Wall,WallChange
+*Warp*,*Warp*
+Wate,Water Edge
+Wave,WaveCannon
+Whum,Whump
+Wild,"Wild Bear, Wild Fang"
+Wind,Wind Slash
+Womb,Wombat
+XFer,X-Fer
+XMet,X-Meteo
+XZon,X-Zone
+Zing,Zinger
+Zone,ZoneSeek

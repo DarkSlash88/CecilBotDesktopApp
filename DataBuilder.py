@@ -1,6 +1,6 @@
 from os import path
 from DataHelper import *
-import xlrd
+
 
 try:
     from sys import _MEIPASS
@@ -31,24 +31,28 @@ def open_mei_fallback(filename, mode='r'):
 
 
 # Make RE read/do this in the future for any version
-BOSS_MOVES_TABLE = path.join(tblpath, "Boss Moves v7.xls")
-CODES_TABLE = path.join(tblpath, "Codes v5.xls")
-ITEM_TABLE = path.join(tblpath, "Item Table v2.xls")
-RANDOM_SKILLSETS_TABLE = path.join(tblpath, "Random Skillsets v2.xls")
-ROOT_TABLE = path.join(tblpath, "Root Table v4.xls")
-SKILL_PARAMETERS_TABLE = path.join(tblpath, "Skill Parameters v3.xls")
-SPECIAL_EQUIPMENT_TABLE = path.join(tblpath, "Special Equipment v3.xls")
-SPECIAL_WEAPONS_TABLE = path.join(tblpath, "Special Weapons v4.xls")
-STATUS_EFFECTS_TABLE = path.join(tblpath, "Status Effects v3.xls")
-COMMANDS_TABLE = path.join(tblpath, "Commands v1.xls")
+BOSS_MOVES_TABLE = path.join(tblpath, "Boss Moves v7.2.csv")
+CODES_TABLE = path.join(tblpath, "Codes v5.2.csv")
+ITEM_TABLE = path.join(tblpath, "Item Table v2.csv")
+TOOL_TABLE = path.join(tblpath, "Tools List v1.csv")
+BOSS_DISAMBIGUATION_TABLE = path.join(tblpath, "Boss Disambiguations v1.csv")
+RANDOM_SKILLSETS_TABLE = path.join(tblpath, "Random Skillsets v2.1.csv")
+ROOT_TABLE = path.join(tblpath, "Root Table v4.csv")
+SKILL_PARAMETERS_TABLE = path.join(tblpath, "Skill Parameters v3.2.csv")
+SPECIAL_EQUIPMENT_TABLE = path.join(tblpath, "Special Equipment v3.csv")
+SPECIAL_WEAPONS_TABLE = path.join(tblpath, "Special Weapons v4.csv")
+STATUS_EFFECTS_TABLE = path.join(tblpath, "Status Effects v3.csv")
+COMMANDS_TABLE = path.join(tblpath, "Commands v1.csv")
 
 
 
 class Data:
     def __init__(self):
+        self.boss_disambiguations = dict_builder(BOSS_DISAMBIGUATION_TABLE)
         self.boss_moves = dict_builder(BOSS_MOVES_TABLE)
         self.codes = dict_builder(CODES_TABLE)
         self.item_table = dict_builder(ITEM_TABLE)
+        self.tool_table = dict_builder(TOOL_TABLE)
         self.random_skillsets = dict_builder(RANDOM_SKILLSETS_TABLE)
         self.root_table = dict_builder(ROOT_TABLE)
         self.skill_parameters = dict_builder(SKILL_PARAMETERS_TABLE)

@@ -1,0 +1,9 @@
+Tool Name,Power,Elements,Statuses,Physical?,Ignores Defense?,Instant Death?,Special Effects
+NoiseBlaster,0,None,Muddle,Yes,No,No,None
+Bio Blaster,20,Poison,Poison,No,No,No,None
+Flash,42,None,Dark,No,No,No,None
+Chain Saw,252,None,Death*,Yes,Yes,Yes*,Has a 1/4 chance to inflict Instant Death.
+Debilitator,0,None,None,Yes,No,No,Makes a target weak to a random element that they are not already weak to.
+Drill,191,None,None,Yes,Yes,No,None
+Air Anchor,128,None,None,Yes,No,Yes,Causes next action or tick to kill enemy.
+AutoCrossbow,125,None,None,Yes,No,No,None

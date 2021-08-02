@@ -1,0 +1,28 @@
+Name,Type,Def,MDef,Stats,Evade,MEvade,Element Null,Element Halve,Element Absorb,Element Weak,Break,Learn,Equip,Statuses,Immunities,Specials
+Dragon Slave,Relic,0,0,0/+7/-7/+7,0,0,None,None,Fire,None,Infinite Merton,Merton (x50),Female,"Sleep, Rflect, Float",None,"Crystal Orb, x2 GP, Earrings, Economizer"
+Demonica,Armor,90,80,0.020408163,20,10,None,None,None,None,Infinite Scan,Scan (x2),All,"Mute, Safe, Regen",None,"Tintinabar, Charm Bangle, Muscle Belt, Atlas Armlet, Hyper Wrist, Sniper Sight, Control+, Black Belt, Exp. Egg, SOS Rflect, SOS Shell, Random Evade"
+Death Note,Relic,0,0,0/0/0/0,0,0,None,None,Ice,None,Infinite Doom,None,All,Condemned,None,"Relic Ring, Moogle Charm, Exp. Egg"
+White Lily,Relic,0,0,0/0/0/0,-10,-10,"Pearl, Lightning, Fire",None,Ice,Poison,Infinite Ice 2,Ice 3 (x1),Female,"Seizure, Condemned",None,"Charm Bangle, Crystal Orb, Earrings, Sketch+"
+White Clover,Relic,0,0,0/0/0/0,0,0,"Fire, Ice",None,Lightning,None,Infinite Bolt 2,Bolt 3 (x1),Female,None,None,"Charm Bangle, Earrings, Gold Hairpin, Sketch+, True Knight, x2 GP"
+White Lotus,Relic,0,0,#DIV/0!,0,0,"Lightning, Ice",None,Fire,None,Infinite Fire 2,Fire 3 (x1),Male,None,None,"Crystal Orb, +25% HP, Hyper Wrist, Sketch+"
+OOO,Armor,56,38,0.020408163,30,20,None,None,None,None,Infinite Palidor,None,All,"Image, Safe, Shell, Haste, Regen",None,"Tintinabar, Charm Bangle, Hyper Wrist, Control+, Sketch+, True Knight, Black Belt, Offering, Dragon Horn, Back Guard, Gale Hairpin, x2 GP, Exp. Egg, Random Evade"
+Red Duster,Armor,78,55,0/+7/+7/0,50,50,Ice,"Water, Earth, Wind, Poison",None,None,Infinite Life 3,Quick (x1),All,"Image, Safe, Shell, Haste, Regen",Death,"Tintinabar, Charm Bangle, Crystal Orb, Muscle Belt, Gold Hairpin, Sniper Sight, Control+, Sketch+, Steal+, Dragon Horn, Back Guard, Gale Hairpin, True Knight, Black Belt, Random Evade"
+Rose Shield,Shield,80,255,0/0/0/0,10,50,None,None,None,None,Infinite Rflect,Cure 3 (x5),All,"Rflect, Slow",None,"Control+, True Knight, SOS Safe, SOS Shell"
+Ukyo Spatula,Shield,28,19,#DIV/0!,20,10,Fire,None,None,None,Infinite Ifrit,None,Female,"Haste, Regen",None,"+12.5% HP, +12.5% MP, Atlas Armlet, Hyper Wrist, Sketch+, Dragon Horn, Black Belt, Offering, x2 GP, Random Evade"
+KingOfGames,Helmet,0,0,0/0/0/0,0,0,None,None,None,None,Infinite Quick,X-Zone (x5),All,"Seizure, Berserk, Image, Haste, Float",Death,"All command changers, Control+, Sketch+, Steal+, Back Guard, Gale Hairpin, True Knight, Merit Award, Genji Glove, Gauntlet, Black Belt, Relic Ring, x2 GP, Exp. Egg, SOS Rflect, SOS Safe, SOS Shell"
+Murderface,Helmet,0,0,0/0/0/0,0,0,None,None,None,None,None,None,All,"Berserk, Haste",None,"Atlas Armlet, Hyper Wrist, Steal+, Dragon Horn, Black Belt, Offering, Relic Ring, x2 GP"
+Neku Phones,Helmet,0,0,0/+7/0/0,0,50,None,None,None,None,None,None,All,None,None,"Crystal Orb, Earrings, Gold Hairpin, Sketch+, Random Evade"
+No.21 Wings,Armor,58,52,0/-7/0/0,-50,-50,None,None,None,None,None,None,All,"Slow, Float",Death,"+12.5% HP, Dragon Horn"
+Scenes Hat,Helmet,19,21,0/0/0/0,0,0,None,None,None,None,Infinite Imp,Muddle (x5),All,Image,None,"Control+, Sketch+, All command changers, True Knight, Merit Award, Genji Glove, Gauntlet, Black Belt, x2 GP, Exp. Egg"
+Contessa,Helmet,255,255,0/0/0/0,50,50,None,None,None,None,None,None,Female,"Image, Haste",None,"Charm Bangle, Moogle Charm, Sniper Sight, Hyper Wrist, Steal+, Dragon Horn, Back Guard, Gale Hairpin, True Knight, Random Evade, Black Belt"
+Wyvern Drug,Relic,0,0,0.020408163,50,50,Poison,None,None,None,None,None,All,"Seizure, Confuse, Condemned",Berserk,"Charm Bangle, Crystal Orb, Earrings, Gold Hairpin, Steal+, Dragon Horn, Gale Hairpin, True Knight, Random Evade, Black Belt, x2 GP, Exp. Egg"
+Mary Ribbon,Helmet,0,0,#DIV/0!,50,50,None,None,None,None,None,None,Female,None,"Dark, Sleep","Charm Bangle, Atlas Armlet, Hyper Wrist, Dragon Horn, Back Guard, Gale Hairpin, True Knight, Genji Glove, Random Evade, Black Belt, Offering, Exp. Egg, SOS Safe, SOS Shell"
+Laylania,Armor,47,35,0/0/0/+7,0,0,"Lightning, Ice",None,"Water, Earth, Pearl, Wind, Fire",None,Siren,None,Female,None,Mute,"Crystal Orb, Earrings, Economizer, Control+, Sketch"
+Page Jacket,Armor,55,85,0/+3/0/0,0,0,None,None,Ice,None,None,None,All,Condemned,"Petrify, Imp, Poison, Zombie, Dark, Sleep, Mute","Tintinabar, Muscle Belt, True Knight, Relic Ring"
+Turtle,Armor,85,55,0/-7/0/0,-50,-50,None,Water,None,None,Infinite Golem,Safe (x1),None,Slow,Condemned,"SOS Safe, Heavy Armor"
+Munchausen,Helmet,24,64,0/0/+3/0,0,0,None,None,None,None,Infinite Suplex,None,All,"Float, Near Fatal",Near Fatal,"Dragon Horn, Tintinabar, True Knight, SOS Reflect"
+Zephyr Cap,Helmet,24,17,0/+1/0/0,10,10,None,Water,None,None,Infinite Pearl Wind,None,All,None,None,None
+Meme Ring,Relic,0,0,0/+1/0/0,0,0,None,None,None,None,Infinite Rasp,None,All,Condemned,"Death, Petrify, Zombie",None
+Meme Shield,Shield,0,69,#DIV/0!,50,0,None,None,None,None,Infinite Osmose,Rasp (x20),All,None,None,"Gold Hairpin, Crystal Orb, x2 GP"
+Dumpster,Helmet,0,0,0/0/0/0,0,0,None,None,None,None,Infinite Fire,None,All,"Image, Silence",None,"Muscle Belt, Genji Glove, Offering"
+Absamantium,Shield,54,50,0/+7/0/0,20,20,None,None,"Pearl, Fire",None,None,Quick (x20),All,"Haste, Float","Death, Petrify, Zombie",None

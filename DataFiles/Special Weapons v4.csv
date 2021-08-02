@@ -1,0 +1,11 @@
+Name,Power,Stats,Evade,MEvade,Elements,Learn,Break,Proc,Hit Rate,Equip,Statuses,Immunities,Specials
+Gades Blade,200,0/0/0/0,0,0,Poison,None,None,None,150,All,Haste,None,Offering
+Dekar Blade,188,0/0/0/0,0,0,None,None,Infinite Demi,None,150,All,None,None,MP crit
+FluoriteDice,88*,0/0/0/0,50,50,None,None,Infinite Stray,None,2*,All,"Image, Float",Death,"Moogle Charm, Sniper Sight, Steal+, Control+, Gale Hairpin, Back Guard, Black Belt, Offering, x2 GP, Exp. Egg, Random Evade, Dice formula"
+SORD.....,0,0.020408163,-50,-50,All,None,None,Palidor,0,All,"Sleep, Seizure, Confuse, Berserk, Mute, Image, Near Fatal, Condemned, Reflect, Safe, Shell, Stop, Haste, Slow, Regen, Float",None,"Dragon Horn, All command changers, Back Guard, Gale Hairpin, Relic Ring, x2 GP, Exp. Egg, SOS Rflect, Drain HP"
+Portal Gun,0,0/0/0/0,0,0,None,None,None,X-Zone,255,All,None,None,"Cleave-type Death, Black Belt"
+Angel Arm,255,0/0/0/0,0,0,Pearl,None,None,Ultima,150,All,None,None,"MP crit, True Knight, Black Belt"
+Rename Card,128,0/0/0/0,0,0,None,None,None,Muddle,230,All,None,None,"Back row, Control+"
+Cecil Wisdom,188,0/0/0/+5,0,0,None,None,None,Mind Blast,200,All,None,Confuse,"Control+, True Knight, Drains MP"
+Run Away!,1,0/+7/0/0,30,30,None,Float (x20),Infinite Escape,Escape,200,All,Float,None,Muscle Belt
+Behaim Watch,0,0/0/0/0,0,0,None,None,Infinite Quick,None,0,None,None,None,None

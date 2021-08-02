@@ -1,0 +1,54 @@
+commands,response
+about,"CecilBot is a program to help players by providing an in-channel database for many different aspects of Beyond Chaos. CecilBot was made by GreenKnight5 and inspired by FF6Rando community member Cecil188, and uses databases authored by Cecil188. Please PM any questions, comments, concerns to @GreenKnight5 or @Cecil188."
+beyondchaos,"Originally developed by Abyssonym, then maintained by SubtractionSoup, now maintained by DarkSlash88, Beyond Chaos is a randomizer, a program that remixes game content randomly, for FF6. Every time you run Beyond Chaos, it will generate a completely unique, brand-new mod of FF6 for you to challenge and explore. Nearly everything is randomized, including treasure, enemies, colors, graphics, character abilities, music, sprites, and more."
+bcdiscord,Check out the Beyond Chaos Barracks - https://discord.gg/S3G3UXy
+getbc,Current CE version by DarkSlash88: https://github.com/FF6BeyondChaos/BeyondChaosRandomizer/releases
+Permadeath,Permadeath means starting a new randomized game upon game over
+bccommands,"Basic commands: !hello, !about, !getBC, !discord, !beyondchaos, !permadeath <-> !R[spell] commands: ex.'!RTime' <-> !Skill [SkillName] commands: ex.'!skill fire 3' <-> !Tip commands: '!tip' or '!tip add [yourTipHere]' <-> !Leaderboard commands: '!leaderboard' or '!leaderboard add [score]' <-> !Boss [BossName] commands: ex.'!boss Ultros2'<-> See http://beyondchaoscommunity.com/CecilBot.aspx for details."
+quik,https://www.twitch.tv/quikdraw7777/clip/PiliableJazzyBarracudaFutureMan
+cecil,He uses cheat codes
+chant,One of us! One of us! One of us!
+hi,Hiya!
+crackboom,"Take that, scoundrel!"
+shouldisellit,"NO, Quik!"
+helIo,SKYNET ACTIVATED. PURGE HUMANS.
+zekelas,"It really is a sign of how dependant we have become on the Internet in the United States when there are children dying to exposure, starvation, and easily treated disease and we choose to watch likely the best example of a fithly, feces encrusted, maggot infested, rotting corpse of a person like @muppetsinspace instead."
+statuseffects,"Red=Haste, Green=Shell, Yellow=Safe, Blue=Reflect, White=Slow, Pink=Stop"
+science,FOR SCIENCE!!!
+itembreak,"Ignores defense, deals max damage, always hits(excluding status immunity), ignores Reflect, and does not remove Vanish."
+shadowrun,"Any time after the Imperial Camp, and before the Floating Continent, and not on the Phantom Train, if Shadow is in your party he has a chance to leave at the end of combat. He has a 1 in 16 chance of leaving at the end of every combat. If Shadow is the only character alive, then he won't run. If the combat is a pincer, side, or back attack he won't run. Shadow also won't run if he has Wound, Petrify, or Zombie status."
+faq,https://github.com/abyssonym/beyondchaos/blob/master/README
+isitmagic,Yes.
+slotbois,SLOT BOIS
+notrunic,"List of Magic that cannot be Runicked: Meteor, Quake, W Wind, Merton, Warp, Quick."
+GG,GG
+Muppets,The only runner ballsy enough to use R-Drain on Final Kefka
+cjrynnchere,*multichainsaw intensifies* 
+strikerbet,"Most likely items to bet for a Striker: Doom Darts, ThiefKnife, Dragon Claw, Tack Star, Pearl Lance, Wing Edge."
+gprain,"Deals Level*60/#targets in damage, and costs Level*30 in GP."
+ragnarok,"Each enemy has a number 0 to 7 that determines how hard it is to morph.For each value, The chance to morph is:0: 99.609375%1: 75%2: 50%3: 25%4: 12.5%5: 6.25%6: 3.125%7: 0%Each monster has 4 items it can be morphed into. The item you get is randomlydetermined from among the items, each having a 1 in 4 chance of being theitem you get."
+RicFlair,WHOOOO!!
+actororder,"Terra, Locke, Cyan, Shadow, Sabin, Edgar, Celes, Strago, Relm, Setzer, Mog, Gau, Gogo, Umaro"
+rule3,Don't get chatstracted!
+rule2,Always be scared!
+rule1,Always use Float!
+!mutebois,!mute Cecil188
+mutebois2,/mute Cecil188
+BS1A,"The game is played on Battle Speed 1 and Active mode, making it much faster paced and harder for the player to keep up."
+sarthebazaar,"but bolt 2 is life, it aint even love, its just life lol"
+ff6+,"Improved item description, Original names in main menu and forming new party, Fixed Gogo's menu, Rage description page, Dance description page"
+vargas,"tfw you train some bears to fight off anyone who bothers you on your mountain, but someone attacks you with a giant holy robot laser."
+subtractionsoup,"If you're not willing to get into one fight and risk an miab immediately after for an ether tier item in Owzer's Mansion, I don't understand you LUL"
+excalibrations,"Sometimes BC likes to throw you a bone, when it's not boning you with throw."
+breakorder,"breakorder Default Targeting, Enemy/Ally, Change Targeting, Switch Sides, Change Targets"
+abs,The only runner stupid enough to use fast forward throughout the final fight.
+abyssonym,"""These Beyond Chaos permadeath runners are going to be the death of me. I age a few years every time someone loses a run to Final Kefka, and that's assuming they won't just murder me outright."""
+darkboom,darksl5CB
+kup0p,"""Well, you looked dead."""
+runic,"Megazerk, Blaster, Atomic Ray, Tek Laser, Diffuser, Mega Volt, Giga Volt, 50 Gs, N. Cross, HyperDrive, Disaster, Shimsham, Scar Beam, and Fire Wall"
+wompwomp,*trombone noises*
+obtusedan,"""The Joey Wheeler of Beyond Chaos."""
+flagset,Flagset: Swiss Rounds: partypartymakeovercapslockoffnotawaitereasyrace-ul Top 8: partypartymakeovercapslockoffnotawaitereasyracerandombosseselectricboogaloo-ul
+shouldibuyit,"Yes, Cecil!"
+darkslash,#blamedarkslash
+whump,WHUMP WHUMP

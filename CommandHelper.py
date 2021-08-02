@@ -12,6 +12,7 @@ def command_parse(author, message):
     bosspattern = r"\A!boss\s.*"
     codepattern = r"\A!code[s]?\s\w*"
     itempattern = r"\A!item\s.*"
+    toolpattern = r"\A!tool\s.*"
     specialequipmentpattern = r"\A!specialequipment\s.*"
     specialweaponpattern = r"\A!specialweapon\s.*"
     statuseffectpattern = r"\A!statuseffect\s\.*"
@@ -20,16 +21,16 @@ def command_parse(author, message):
 
     #General command patterns
     hellopattern = r"\A!hello"
-    commandspattern = r"\A!command[s]?"
+    commandspattern = r"\A!bccommand[s]?"
     beyondchaospattern = "\A!beyondchaos"
-    discordpattern = r"\A!discord"
+    discordpattern = r"\A!bcdiscord"
     getbcpattern = r"\A!getbc"
     permadeath = r"\A!permadeath"
     aboutpattern = r"\A!about"
 
 
     if re.search(rchaospattern, message, re.IGNORECASE):
-        return "It's literally every spell/skill in the game in one spellset. Threat:(8/255)"
+        return "It's literal chaos. It can roll any spell or skill in the game. Use at your own risk! Danger Odds:(8/256=3.13%)"
 
     elif re.search(rcommandpattern, message, re.IGNORECASE):
         try:
@@ -59,10 +60,15 @@ def command_parse(author, message):
     elif re.search(bosspattern, message, re.IGNORECASE):
         try:
             temp = re.sub("!boss ", "", message).lower()
-            return (data.boss_moves[temp])
+            return (data.boss_disambiguations[temp])
         except:
-            return (f"Sorry, could not find {temp}. Please check your spelling "
+            try:
+                temp = re.sub("!boss ", "", message).lower()
+                return (data.boss_moves[temp])
+            except:
+                return (f"Sorry, could not find {temp}. Please check your spelling "
                   f"and try again.")
+            return
     elif re.search(codepattern, message, re.IGNORECASE):
         try:
             temp = re.sub("!code ", "", message).lower()
@@ -77,6 +83,13 @@ def command_parse(author, message):
         except:
             return (f"Sorry, could not find {temp}. Please check your spelling "
                   f"and try again.")
+    elif re.search(toolpattern, message, re.IGNORECASE):
+        try:
+            temp = re.sub("!tool ", "", message).lower()
+            return (data.tool_table[temp])
+        except:
+            return (f"Sorry, could not find {temp}. Please check your spelling "
+                    f"and try again.")
     elif re.search(specialequipmentpattern, message, re.IGNORECASE):
         try:
             temp = re.sub("!specialequipment ", "", message).lower()
@@ -103,13 +116,13 @@ def command_parse(author, message):
             return (data.root_table[temp])
         except:
             return (f"Sorry, could not find {temp}. Please check your spelling "
-                  f"and try again. REMEBER: capitalization matters!")
+                  f"and try again. REMEMBER: capitalization matters!")
 
 
     elif re.search(hellopattern, message, re.IGNORECASE):
         return f"Hello {author}!"
     elif re.search(commandspattern, message, re.IGNORECASE):
-        return "Basic commands: !hello, !about, !getBC, !discord, !beyondchaos, !permadeath " \
+        return "Basic commands: !hello, !about, !getBC, !bcdiscord, !beyondchaos, !permadeath " \
                "<!R[spell] commands: ex.'!RTime'> " \
                "<!Skill [SkillName] commands: ex.'!skill fire 3'> " \
                "<!Boss [BossName] commands: ex. '!boss Kefka3'> " \
@@ -118,7 +131,8 @@ def command_parse(author, message):
                "<!StatusEffect [EffectName] commands: ex: '!statuseffect poison'> " \
                "<!Base [SkillBase] commands: ex. '!base Fir'> " \
                "<!SpecialEquipment [EquipName] commands: ex. '!specialequipment red duster'> " \
-               "<!SpecialWeapons [WeaponName] commands: ex. '!specialweapon portal gun'>"
+               "<!SpecialWeapons [WeaponName] commands: ex. '!specialweapon portal gun'>" \
+               "<!Tool [ToolName] commands: ex. '!tool bio blaster'>"
     elif re.search(beyondchaospattern, message, re.IGNORECASE):
         return "Originally developed by Abyssonym, but now maintained by SubtractionSoup, " \
                "Beyond Chaos is a randomizer, a program that remixes game content randomly, " \

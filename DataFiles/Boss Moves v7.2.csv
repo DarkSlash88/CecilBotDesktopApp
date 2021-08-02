@@ -1,0 +1,111 @@
+Boss,Level,HP,MP,Skills,Statuses,Absorbs,Nullifies,Weaknesses
+Whelk,4,50000,120,Mega Volt,Nothing,Lightning,None,None
+Head,6,1600,1000,"Battle, Special","Slow, Stop",None,None,None
+Ipooh,11,360,60,"Battle, Special","Dark, Imp, Mute, Slow, Stop, Control",None,None,Fire
+Vargas,12,1650,220,"Battle, Special, Gale Cut","Dark, Slow, Stop",None,None,Poison
+Ultros1,13,3000,640,"Battle, Special, Tentacle","Dark, Slow, Stop",Water,None,"Fire, Lightning"
+Leader,12,456,20,"Battle, Special",Everything except Control,None,None,None
+Grunt,12,100,10,Battle,Everything,None,None,None
+Cadet,13,380,48,"Battle, Special",Everything,None,None,Poison
+Siegfried,7,100,5,Battle,"Slow, Stop",None,None,None
+Specter,19,1500,10000,"Battle, Special, Ice, Raid","0 MP, Undead, Zombie, Poison, Petrify, Death, Condemned, Mute, Seizure",Poison,None,"Fire, Pearl"
+GhostTrain,14,1900,350,"Battle, Special, Evil Toot, Acid Rain, Scar Beam","Undead, Death, Condemned",Poison,None,"Fire, Lightning, Pearl"
+Piranha,9,10,60,Battle,"Dark, Mute, Berserk, Muddle, Seizure, Sleep, Slow, Stop",None,None,Lightning
+Rizopas,13,775,39,"Battle, Special, Mega Volt, Ice, El Nino","Dark, Berserk, Muddle, Seizure, Slow, Stop",Water,None,Lightning
+Merchant,5,119,20,Battle,"Slow, Stop",None,None,None
+Officer,7,102,25,Battle,"Dark, Mute, Control",None,None,Poison
+B.Day Suit,6,100,100,Escape,"Slow, Stop",None,None,Poison
+TunnelArmr,16,1150,900,"Battle, Special, Fire, Tek Laser, Bolt, Poison",Nothing,None,None,"Lightning, Water"
+Kefka1,18,3000,3000,"Battle, Poison, Ice 2, Bolt, Muddle, Drain, Ice, Escape","Slow, Stop",None,None,None
+Dadaluma,22,3270,1005,"Battle, Special, Shock Wave, Throw Weapon, Steal GP, Use Item, Call Monster, Jump","Dark, Imp, Petrify, Mute, Sleep, Slow, Stop, Control",None,None,Poison
+Ultros2,19,2550,500,"Battle, Special, Tentacle, Imp Song, Fire, L.3 Muddle, Mega Volt, Drain, Acid Rain","Dark, Slow, Stop",Water,None,"Fire, Lightning"
+ProtoArmor,19,670,125,"Special, Launcher, Schiller, Tek Laser","Dark, Death, Condemned, Mute, Berserk, Muddle, Sleep, Slow, Stop, Control",None,None,Lightning
+Ifrit,21,3300,600,"Battle, Fire, Fire 2, Fire 3, Blaze","Dark, Slow",Fire,"Lightning, Poison, Wind, Pearl, Earth, Water",Ice
+Shiva,21,3000,500,"Ice, Ice 2, Blizzard","Dark, Slow",Ice,"Lightning, Poison, Wind, Pearl, Earth, Water",Fire
+Number 024,24,4777,777,"Battle, Special, WallChange, Sun Bath, Ice Rabbit, Scan, Ice, Ice 2, Fire, Fire 2, Fire Ball, Aqua Rake, Acid Rain, Cure, Cure 2, Magnitude8, Cave In, R.Polarity, Sonic Boom, Gale Cut, Bolt, Bolt 2","0 MP, Imp, Sleep",None,None,None
+Number 128,23,3276,810,"Battle, Special, Gale Cut, Atomic Ray, Blaster, Shock Wave, Ice, Net","Dark, Berserk, Slow",Ice,None,None
+RightBlade,21,400,150,"Battle, Special","Petrify, Death, Condemned, Slow, Stop",Ice,None,None
+Left Blade,22,700,470,"Battle, Special, Shimsham","Petrify, Death, Condemned, Slow, Stop",Ice,None,None
+CraneL,23,1800,447,"Battle, Special, Fire 2, TekBarrier, Magnitude8, Bolt, Bolt 2, Giga Volt",Slow,Lightning,None,Water
+CraneR,24,2300,447,"Battle, Special, Bolt 2, Fire, Fire 2, Fire 3, Magnitude8, TekBarrier",Slow,Fire,None,"Lightning, Water"
+FlameEater,26,8400,480,"Safe, Rflect, Bomblet, Fire, Fire 2, Fire 3, Fire Ball, Quartr, Flare","0 MP, Slow",Fire,"Lightning, Poison, Pearl, Earth",Ice
+Mega Armor,21,1000,50,"Special, Tek Laser, Missile","Dark, Death, Condemned, Mute, Berserk, Muddle, Sleep, Slow, Stop",None,None,"Lightning, Water"
+Ultros3,25,22000,750,"Battle, Special, Safe, Haste, Lode Stone, Tentacle, Stone, Magnitude8, Aqua Rake, Fire 3, Ice 3, Bolt 3","Dark, Slow, Stop",Water,None,"Fire, Lightning"
+Kefka2,1,5001,1000,"Battle, Poison, Bio, Fire 3, Bolt, Drain","Slow, Stop",None,None,None
+Ultros4,26,17000,8000,"Battle, Special, Tentacle","Dark, Slow",None,None,"Fire, Poison"
+Chupon,26,10000,40000,"Battle, Fire Ball, Sneeze","Dark, Mute, Berserk, Sleep, Slow, Stop",Fire,None,"Ice, Water"
+Air Force,25,8000,750,"Tek Laser, Diffuser, WaveCannon",Nothing,None,None,"Lightning, Water"
+MissileBay,25,3000,7000,"Missile, Launcher","Slow, Stop, Control",None,None,"Lightning, Water"
+Laser Gun,24,3300,335,"Diffuser, Tek Laser, Atomic Ray","Slow, Stop, Control",None,None,"Lightning, Water"
+Speck,25,420,285,Nothing,"Slow, Stop",None,None,"Lightning, Water"
+AtmaWeapon,37,24000,5000,"Battle, Special, Flare Star, Quartr, Rasp, W Wind, Blaze, Bio, Quake, Meteo, Fire 2, Mind Blast, Flare","0 MP, Dark, Seizure, Slow",None,None,None
+Naughty,24,3000,195,"Battle, Special, Cold Dust, Ice 2, Blizzard, Mute, Imp","0 MP, Dark, Zombie, Poison, Imp, Petrify, Mute, Sleep",Ice,"Poison, Wind, Earth, Water","Fire, Lightning, Pearl"
+Nerapa,26,2800,280,"Battle, Fire 2, Fire 3, Fire Ball, Roulette, Condemned","0 MP, Death, Condemned, Berserk, Muddle, Stop",Fire,"Poison, Wind, Earth, Water","Ice, Lightning, Pearl"
+Phunbaba1,26,60000,10000,"Battle, Special, Bolt 2, Bolt 3, Blow Fish",Dark,Lightning,None,Poison
+Phunbaba2,31,28000,10000,"Battle, Special, Bolt 2, Bolt 3, Blow Fish, Escape",Dark,Lightning,None,Poison
+TentacleBR,31,7000,800,"Battle, Special, Poison, Bio, Entwine, Seize, Discard","Dark, Poison, Petrify, Mute, Sleep, Slow",Fire,None,"Ice, Water"
+TentacleBL,32,6000,700,"Battle, Special, Poison, Bio, Entwine, Seize, Discard","Dark, Poison, Death, Condemned, Seizure, Slow","Ice, Water",None,Fire
+TentacleTR,33,5000,600,"Battle, Special, Poison, Bio, Entwine, Seize, Discard","Dark, Poison, Petrify, Mute, Sleep, Slow","Lightning, Water",None,None
+TentacleTL,34,4000,500,"Battle, Special, Poison, Bio, Entwine, Seize, Discard","Petrify, Seizure, Slow, Stop","Earth, Water",None,None
+Presenter,19,9230,1600,"Battle, Magnitude8, Mega Volt, Blow Fish, Giga Volt","0 MP, Petrify, Death, Condemned","Ice, Lightning, Water",None,Fire
+Whelk Head,31,9845,1600,"Battle, Special, Mega Volt, El Nino","Dark, Petrify, Death, Condemned, Mute, Sleep, Slow, Stop","Ice, Lightning, Water",Poison,Fire
+Dullahan,37,23450,1721,"Battle, Special, Ice 2, Ice 3, Pearl, Cure 2, L? Pearl, N. Cross, Reflect???, Absolute 0","0 MP, Dark, Seizure, Slow",Ice,None,Fire
+Doom Gaze,68,55555,38000,"Battle, Doom, Aero, L.5 Doom, Ice 3, Escape",0 MP,"Ice, Poison",None,"Fire, Pearl"
+Storm Drgn,74,42000,1250,"Battle, Special, Wind Slash, Rage, Cyclonic, Aero","Dark, Seizure",Wind,None,Lightning
+Dirt Drgn,53,28500,16500,"Battle, Special, Quake, 50 Gs, Slide, Magnitude8","Dark, Poison, Sleep, Slow",None,None,"Wind, Water"
+Zone Eater,61,7700,57000,"Demi, Engulf, Cold Dust",Nothing,Ice,"Fire, Lightning, Poison, Wind, Pearl, Earth",Pearl
+Chadarnook1,37,56000,9400,"Battle, Special, Lullaby, Charm, Phantasm","Dark, Slow","Pearl, Water",None,Fire
+Chadarnook2,41,30000,7600,"Battle, Flash Rain, Bolt 3, Bolt 2","0 MP, Dark, Slow",Lightning,None,"Fire, Pearl"
+Phunbaba3,31,26000,10000,"Battle, Special, Bolt 2, Bolt 3, Blow Fish, BabaBreath",Dark,Lightning,None,Poison
+Phunbaba4,31,26000,10000,"Battle, Special, Bolt 2, Bolt 3, Blow Fish",Dark,Lightning,None,Poison
+Ice Dragon,74,24400,9000,"Battle, Surge, Absolute 0, N. Cross","0 MP, Dark, Poison, Mute, Berserk, Muddle, Seizure, Slow",Ice,None,Fire
+Tritoch,62,30000,50000,"Rasp, Ice 3, Cold Dust","Dark, Zombie, Seizure",Ice,"Lightning, Poison, Wind, Pearl, Earth, Water",Fire
+Pugs,99,14001,11000,"Battle, Special, Pearl","Dark, Zombie, Poison, Imp, Mute, Seizure, Slow, Control",Water,None,Fire
+Umaro,33,17200,6990,"Battle, Special, Blizzard, Item Use, Snowball, Surge, Lode Stone, Jump","Dark, Poison, Berserk, Sleep, Slow",Ice,None,"Fire, Poison"
+SrBehemoth,43,19000,1600,"Battle, Special, Ice 3, Meteo, Pearl, Ice 2","Dark, Imp, Slow, Stop",Ice,None,"Fire, Poison"
+Red Dragon,67,30000,1780,"Battle, Special, Fire 3, Flare, Fire 2, Fire Ball, L.4 Flare, S. Cross, Flare Star","Dark, Poison, Muddle, Seizure, Slow",Fire,None,"Ice, Water"
+Master Pug,73,22000,1200,"Battle, Special, Fire 3, Ice 3, Bolt 3, Bio, W Wind, Pearl, Quake, CleanSweep, Step Mine","Dark, Poison, Sleep, Slow",Water,None,None
+KatanaSoul,61,37620,7400,"Battle, Special, Weapon Throw, GP Rain, Gale Cut, Shock Wave, Bolt Edge, Water Edge, Fire Skean, Blow Fish","Dark, Poison, Muddle, Seizure",None,None,Poison
+Blue Drgn,65,26900,3800,"Battle, CleanSweep, Rippler, Slow, Aqua Rake, Flash Rain, Acid Rain","Dark, Poison, Slow",Water,None,Lightning
+Hidon,43,25000,12500,"Battle, Bio, ChokeSmoke, Poison, GrandTrain, Virite, Raid","Undead, Slow",Poison,None,"Fire, Pearl, Earth"
+HidoniteTR,43,3500,1000,"Battle, Special","Dark, Poison, Petrify, Death, Condemned, Mute, Seizure, Slow, Stop, Control",Poison,None,Earth
+HidoniteBL,43,3500,1000,"Battle, Special","Dark, Zombie, Poison, Petrify, Berserk, Seizure, Control","Fire, Ice, Lightning, Poison, Wind, Pearl, Water",None,None
+HidoniteR,43,3500,1000,"Battle, Special","Death, Condemned, Muddle, Seizure, Slow, Stop",Poison,None,"Fire, Pearl"
+HidoniteBR,43,3500,1000,"Battle, Special","Dark, Poison, Death, Condemned, Mute, Berserk, Muddle, Seizure, Sleep, Slow, Stop",None,None,All
+Curley,47,15000,2000,"Delta Hit, Rflect, Fire 2, Fire 3, Life 2, Slow, Mute, Stop, Pearl Wind","0 MP, Dark, Sleep",Fire,None,"Ice, Water"
+Larry,47,10000,2000,"Delta Hit, Rflect, Ice 2, Ice 3, Run Away","Dark, Death, Condemned, Mute, Muddle, Slow","Ice, Wind",None,Fire
+Moe,47,12500,2000,"Delta Hit, Rflect, Bolt 2, Bolt 3, Safe, Shell, Haste, Cure 2","0 MP, Dark, Berserk, Stop",Lightning,None,None
+WrexSoul,53,23066,5066,"Battle, Bolt 3, Zinger",Dark,"Fire, Pearl",None,Ice
+SoulSaver,41,3066,566,"Battle, Special, Rflect, Ice 3, Bolt 3, Fire 3, Cure","Dark, Zombie, Petrify, Death, Condemned, Berserk, Muddle, Slow, Control","Fire, Pearl",None,Ice
+L.10 Magic,Oct-48,1000,300,"Fire, Ice, Bolt, Slow, Stop, Haste","0 MP, Undead, Dark, Zombie, Poison, Petrify, Mute, Berserk, Muddle, Seizure, Control",Poison,None,"Fire, Pearl"
+L.20 Magic,51/20,2000,500,"Demi, Quartr, Break, X-Zone, Rasp, Muddle, Safe","0 MP, Dark, Zombie, Poison, Death, Condemned, Muddle, Seizure, Slow, Control",Poison,None,None
+L.30 Magic,54/30,3000,700,"Fire 2, Ice 2, Bolt 2, Imp, Osmose, Rflect","0 MP, Zombie, Poison, Petrify, Death, Condemned, Berserk, Seizure, Sleep, Slow, Control",Pearl,None,Poison
+L.40 Magic,55/40,4000,1000,"Drain, Break, Vanish, Mute, Sleep","0 MP, Zombie, Poison, Petrify, Mute, Seizure, Control",Poison,None,Lightning
+L.50 Magic,57/50,5000,2000,"Poison, Bio, Doom, Remedy, Dispel, Bserk, Slow, Haste2","0 MP, Undead, Death, Condemned, Mute, Muddle, Seizure, Slow, Stop, Control",Poison,None,"Fire, Pearl"
+L.60 Magic,58/60,6000,5000,"Quake, W Wind, Pearl, Osmose, Slow 2, Regen","0 MP, Zombie, Petrify, Mute, Seizure, Sleep, Slow, Control",Ice,None,Fire
+L.70 Magic,56/70,7000,3000,"Fire 3, Ice 3, Bolt 3, Sleep, Rasp, Shell","0 MP, Dark, Zombie, Petrify, Death, Mute, Seizure, Slow, Stop, Control",Fire,None,"Ice, Water"
+L.80 Magic,53/80,8000,2800,"Cure 2, Remedy, Haste, Fire 3, Ice 3, Bolt 3, Bio, Poison, Cure 3, Life 3, Stop, Dispel, Pearl","0 MP, Dark, Zombie, Poison, Petrify, Death, Condemned, Seizure, Sleep, Control",None,None,Poison
+L.90 Magic,55/90,9000,9000,"Meteor, Merton, Flare, Dispel, Stop, Bolt 3, Life 3","0 MP, Dark, Zombie, Poison, Berserk, Muddle, Seizure, Slow, Stop, Control",Wind,"Pearl, Earth, Water",None
+L.255 Magic,68/99,50000,50000,"Fire 2, Ice 2, Bolt 2, Fire 3, Ice 3, Bolt 3, Doom, Mute, Bio, Ultima, WallChange","0 MP, Berserk",None,None,None
+Prometheus,56,14500,2050,"Special, Shrapnel, S. Cross, N. Cross","Slow, Control",None,None,"Lightning, Water"
+White Drgn,71,18500,12000,"Pearl, Dispel","Dark, Zombie, Mute, Slow, Stop",Pearl,None,None
+Gold Drgn,62,32400,4000,"Battle, Bolt, Bolt 2, Bolt 3, Giga Volt","0 MP, Dark, Poison, Berserk",Lightning,None,Water
+Skull Drgn,62,32800,1999,"Battle, Condemned, Specter, Elf Fire, Disaster",0 MP,Poison,None,"Fire, Pearl"
+Inferno,67,30800,9700,"Special, Delta Hit, TekBarrier, Bolt 3, Meteor, Bolt 2, Atomic Ray, Giga Volt, Shock Wave","Dark, Slow",Fire,None,Lightning
+Striker,67,11000,2600,"Battle, Shrapnel","Petrify, Death, Condemned, Slow, Stop",Ice,None,Fire
+Rough,69,8000,770,"Battle, Special","Petrify, Death, Condemned, Slow, Stop",Lightning,None,Water
+Atma,67,55000,19000,"Random, Battle, Fire 3, Ice 3, Bolt 3, CleanSweep, S. Cross, N. Cross, Flare Star, Meteor, Ultima, Quake","0 MP, Dark, Slow","Poison, Wind, Pearl, Earth, Water",None,None
+Guardian,67,60000,5200,"Battle, Special, Tentacle, Entwine, Stone, Shock Wave, Weapon Throw, Item Use, Tek Barrier, Tek Laser, Diffuser, Launcher, WaveCannon, Flare, Meteo, Flare Star, Missile, Atomic Ray",Slow,None,None,"Lightning, Water"
+Doom,73,63000,4800,"Battle, Special, Targetting, ForceField, Ice 3, N. Cross, Absolute 0","Dark, Slow","Ice, Poison",None,Pearl
+Poltrgeist,67,58000,18900,"Battle, Special, Blaster, WaveCannon, Flare Star, S. Cross, Meteo, Aero, Shrapnel, Stop","Dark, Slow, Stop","Fire, Wind",None,Poison
+Goddess,68,44000,19000,"Battle, Overcast, Bolt 3, Flash Rain, Quasar, Charm, Lullaby, Bolt 2, Love Token",Nothing,"Lightning, Pearl",None,None
+Short Arm,73,27000,10000,"Random, Battle, Special","Mute, Berserk, Seizure, Slow",None,None,Water
+Long Arm,73,33000,10000,"Random, Battle, Shock Wave","Petrify, Death, Berserk",None,None,Wind
+Face,74,30000,10000,"Random, Special, Dread, Magnitude8, R.Polarity, Safe, Haste, Quake",Dark,None,Earth,Fire
+Tiger,70,30000,10000,"Random, Battle, Special, S. Cross, N. Cross, Flare Star","Poison, Seizure",Earth,None,Ice
+Tools,73,24000,10000,"Random, Diffuser, Grav Bomb, Tek Laser, Absolute 0, Delta Hit, Atomic Ray, Missile","Death, Condemned, Slow, Stop",None,None,Lightning
+Magic,72,41000,10000,"Random, Bolt 3, Mute, Pearl, Flare, Rasp, Fire 3, Ice 2, Bolt 3, Rflect, Stop, Life 3, Ice 3, Sleep, Slow 2, Haste2, Haste, Imp, Muddle, Poison, Drain, Bio, Dispel, Quartr",Mute,None,None,Earth
+Hit,73,28000,10000,"Random, Battle, Special","Berserk, Slow, Stop",None,None,Poison
+Girl,58,9999,10000,"Random, Special, Pearl Wind, Life 2",Nothing,All,None,All
+Sleep,71,40000,10000,"Random, Special, Merton, Meteo, Condemned, Train, W Wind",Nothing,None,None,None
+Kefka3,71,62000,38000,"Random, Battle, Special, Fire 3, Ice 3, Bolt 3, Train, Revenger, HyperDrive, Ultima, Goner, Meteor, Fallen One",Nothing,None,Poison,None
