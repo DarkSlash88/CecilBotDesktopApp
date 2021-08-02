@@ -134,14 +134,14 @@ def command_parse(author, message):
                "<!SpecialWeapons [WeaponName] commands: ex. '!specialweapon portal gun'>" \
                "<!Tool [ToolName] commands: ex. '!tool bio blaster'>"
     elif re.search(beyondchaospattern, message, re.IGNORECASE):
-        return "Originally developed by Abyssonym, but now maintained by SubtractionSoup, " \
-               "Beyond Chaos is a randomizer, a program that remixes game content randomly, " \
-               "for FF6. Every time you run Beyond Chaos, it will generate a completely unique, " \
-               "brand-new mod of FF6 for you to challenge and explore. There are over 10 billion " \
-               "different possible randomizations! Nearly everything is randomized, " \
-               "including treasure, enemies, colors, graphics, character abilities, and more."
+        return "Originally developed by Abyssonym, then maintained by SubtractionSoup, " \
+               "now maintained by DarkSlash88, Beyond Chaos is a randomizer, " \
+               "a program that remixes game content randomly, for FF6. Every time you run Beyond Chaos," \
+               "it will generate a completely unique, brand-new mod of FF6 for you to challenge and explore." \
+               "Nearly everything is randomized, including treasure, enemies, colors," \
+               "graphics, character abilities, music, sprites, and more."
     elif re.search(getbcpattern, message, re.IGNORECASE):
-        return "Current EX version by SubtractionSoup: https://github.com/subtractionsoup/beyondchaos/releases/latest"
+        return "Current CE version by DarkSlash88: https://github.com/FF6BeyondChaos/BeyondChaosRandomizer/releases"
     elif re.search(discordpattern, message, re.IGNORECASE):
         return "Check out the Beyond Chaos Barracks - https://discord.gg/S3G3UXy"
     elif re.search(permadeath, message, re.IGNORECASE):
