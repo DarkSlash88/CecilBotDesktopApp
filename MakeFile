@@ -1,1 +1,1 @@
-pyinstaller.exe Cecilbot.py -F -w --add-data "DataFiles\*.xls;DataFiles" --add-data "*.py;."
+pyinstaller.exe Cecilbot.py -F -w --add-data "DataFiles.csv;DataFiles" --add-data ".py;."
