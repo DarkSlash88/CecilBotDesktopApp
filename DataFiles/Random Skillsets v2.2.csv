@@ -33,6 +33,6 @@ RParty,"Haste2, Palidor, Kirin, ZoneSeek, Carbunkl, Phantom, Seraphim, Golem, Un
 RTek,"Scan, Sonic Boom, Plasma, Bio Blast, Flash, Bio Blast, Heal Force, Confuser, X-Fer, TekMissile, Schiller, Blaster, Atomic Ray, Tek Laser, Diffuser, WaveCannon, Mega Volt, Giga Volt, Big Guard, ForceField, TekBarrier, Launcher, HyperDrive, Grav Bomb, Shrapnel, Missile, Shock Wave ",(0/27=0%)
 RTime,"Demi, Quartr, X-Zone, Meteor, Slow, Mute, Haste, Stop, Float, Vanish, Haste2, Slow 2, *Warp*, Quick, Regen, X-Fer, Dischord, Quasar, R.Polarity, Meteo ",(0/20=0%)
 RWild,Randomly chooses 1 of 8 skills. Is different every seed. ,(?/8=??%)
-RLevel,"L.5 Doom, L.4 Flare, L.3 Muddle, L.? Pearl ",(0/4=0%)
+RLevel,"L.5 Doom, L.4 Flare, L.3 Muddle, L.? Pearl, Dischord, Stone, Flare Star",(0/7=0%)
 RMiss,"X-Zone, Stone, Virite, Schiller, Confusion, Blaster, Cyclonic, Disaster, Meteo, Dread ",(0/10=0%)
 Rlimit,"Riot Blade, Mirager, Back Blade, ShadowFang, RoyalShock, TigerBreak, Spin Edge, SabreSoul, Star Prism, Red Card, MoogleRush, X-Meteo",(0/12=0%)
